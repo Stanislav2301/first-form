@@ -1,1 +1,14 @@
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
 
+ .location, .firstLastName, .userPhoto, .nameAndEmail, .zipAndTel, .main{
+    display: flex;
+}
+
+.sex {
+    margin-bottom: 20px;
+}

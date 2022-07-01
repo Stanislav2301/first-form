@@ -5,29 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
+    <main class="main">
         <form action="#" name="createAnAccount">
             <h1>Create an Account</h1>
-                <label for="first-name">First Name</label>
-                <input type="text" name="createAnAccount" id="first-name" autofocus>
-                <label for="last-name">Last Name</label>
-                <input type="text" name="createAnAccount" id="last-name">
+            <section class="firstLastName">
+                <div class="inputContainer">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="createAnAccount" id="first-name" autofocus>
+                </div>
+                <div class="inputContainer">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="createAnAccount" id="last-name">
+            </section>
+            <div class="inputContainer">
                 <label for="e-mail">E-mail</label>
                 <input type="email" name="createAnAccount" id="e-mail">
                 <p>We'll never share your email with anyone else.</p>
-                <label for="male">Male</label>
-                <input type="radio" name="createAnAccount" id="male">
+            </div>
+            <section class="sex">
+                <label for="male" >Male</label>
+                <input type="radio" name="createAnAccount" id="male" >
                 <label for="female">Female</label>
                 <input type="radio" name="createAnAccount" id="female">
-                <label for="country">Country</label>
-                <select name="createAnAccount" id="country">
-                    <option value="" disabled selected>Select</option>
-                    <option value="Afghanistan">Afghanistan</option>
-                </select>
-                <label for="city">City</label>
-                <input type="text" name="createAnAccount" id="city">
+            </section>
+            <section class="location">
+                <div class="inputContainer">
+                    <label for="countryInAccaunt">Country</label>
+                    <select name="createAnAccount" id="countryInAccaunt">
+                        <option value="" disabled selected>Select</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                    </select>
+                </div>
+                <div class="inputContainer">
+                    <label for="city">City</label>
+                    <input type="text" name="createAnAccount" id="city">
+                </div>
+            </section>
                 <button type="submit">Sign up</button>
                 <p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms of Use</a>  and <a href="#">Privacy Policy</a>.</p>
                 <footer>
@@ -35,6 +52,50 @@
                 </footer>
         </form>
         
+        <form action="#" name="profile">
+            <section class="userPhoto">
+                <img src="./img/📷 Image.png" alt="userpic-img">
+                <input type="file" name="profile" id="userPhoto">
+                <input type="reset" value="Reset uploaded file"></input>
+            </section>
+            <section class="nameAndEmail">
+                <div class="inputContainer">
+                    <label for="name">Name</label>
+                    <input type="text" name="profile" id="name">
+                </div>
+                <div class="inputContainer">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="profile" id="email">
+                </div>
+            </section>
+           <section class="location">
+                <div class="inputContainer">
+                    <label for="countryInProfile">Country</label>
+                    <select name="profile" id="countryInProfile">
+                        <option value="" disabled selected>Select</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Albania">Albania</option>
+                        <option value="Algeria">Algeria</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="cityInProfile">City</label>
+                    <input type="text" name="profile" id="cityInProfile">
+                </div>
+           </section>
+            <section class="zipAndTel">
+                <div class="inputContainer">
+                    <label for="zipcode">Zip Code</label>
+                    <input type="text" pattern="[0-9]{5}" name="profile" id="zipcode">
+                </div>
+                <div class="inputContainer">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="profile" id="phone">
+                </div>
+            </section>
+            
+             <button type="submit">Update</button>   
+        </form>
         
     </main>
 </body>
