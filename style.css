@@ -1,14 +1,14 @@
-.inputContainer {
+.input-container {
     display: flex;
     flex-direction: column;
     margin-right: 20px;
     margin-bottom: 20px;
 }
 
- .location, .firstLastName, .userPhoto, .nameAndEmail, .zipAndTel, .main{
+ .location, .first-and-last-name, .user-photo, .name-and-email, .zip-and-tel, .main {
     display: flex;
 }
 
-.sex {
+.gender {
     margin-bottom: 20px;
 }
