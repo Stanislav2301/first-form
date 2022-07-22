@@ -5,54 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main class="main">
-        <form action="#" name="create-an-account">
-            <h1>Create an Account</h1>
+        <form action="#" name="create-an-account" class="form-account">
+            <h1 class="heading">Create an Account</h1>
             <section class="first-and-last-name">
-                <div class="input-container">
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="create-an-account" id="first-name" autofocus>
+                <div class="input-container first-name">
+                    <label for="first-name" class="label">First Name</label>
+                    <input type="text" name="create-an-account" id="first-name" autofocus class="input">
                 </div>
-                <div class="input-container">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" name="create-an-account" id="last-name">
+                <div class="input-container last-name">
+                    <label for="last-name" class="label">Last Name</label>
+                    <input type="text" name="create-an-account" id="last-name" class="input">
+                </div>
             </section>
-            <div class="input-container">
-                <label for="e-mail">E-mail</label>
-                <input type="email" name="create-an-account" id="e-mail">
+            <div class="input-container email-account">
+                <label for="e-mail" class="label">E-mail</label>
+                <input type="email" name="create-an-account" id="e-mail" class="input">
                 <p>We'll never share your email with anyone else.</p>
             </div>
             <section class="gender">
-                <label for="male" >Male</label>
-                <input type="radio" name="create-an-account" id="male" >
-                <label for="female">Female</label>
-                <input type="radio" name="create-an-accoun" id="female">
+                <div class="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="create-an-account" id="male">
+                </div>
+                <div class="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="create-an-account" id="female">
+                </div>
             </section>
             <section class="location">
-                <div class="input-container">
-                    <label for="country-in-account">Country</label>
-                    <select name="create-an-account" id="country-in-account">
+                <div class="input-container country-in-account" >
+                    <label for="country-in-account" class="label">Country</label>
+                    <select name="create-an-account" id="country-in-account" class="input">
                         <option value="" disabled selected>Select</option>
                         <option value="Afghanistan">Afghanistan</option>
                     </select>
                 </div>
-                <div class="input-container">
-                    <label for="city">City</label>
-                    <input type="text" name="create-an-account" id="city">
+                <div class="input-container city-in-account">
+                    <label for="city" class="label">City</label>
+                    <input type="text" name="create-an-account" id="city" class="input">
                 </div>
             </section>
-                <button type="submit">Sign up</button>
-                <p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms of Use</a>  and <a href="#">Privacy Policy</a>.</p>
+                <button type="submit" class="button-account">Sign up</button>
+                <p class="account-description">By clicking the 'Sign Up' button, you confirm that you accept our <a href="#" class="terms">Terms of Use</a>  and <a href="#">Privacy Policy</a>.</p>
                 <footer>
-                    <p>Have an account? <a href="#">Log In</a></p>
+                    <hr class="hline">
+                    <p class="footer-text">Have an account? <a href="#">Log In</a></p>
                 </footer>
         </form>
         
-        <form action="#" name="profile">
+        <form action="#" name="profile" class="form-profile">
+            <h1 class="heading">Profile</h1>
             <section class="user-photo">
                 <img src="./img/📷 Image.png" alt="userpic-img">
                 <input type="file" name="profile" id="user-photo">
